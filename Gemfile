@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 
 gem 'rails', '4.1.5'
@@ -20,6 +21,12 @@ gem 'cancancan', '~> 1.9'
 gem 'webpay', '~> 3.1.2'
 
 
+# Assets
+gem 'bootstrap-sass', '~> 3.2.0.2'
+# gem 'rails-assets-bootstrap-sass-official', '~> 3.2.0.2'
+gem 'rails-assets-bootswatch-scss', '~> 3.2.0'
+gem 'twitter-bootswatch-rails', '~> 3.2.0.0'
+gem 'twitter-bootswatch-rails-helpers', '~> 3.2.0.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
