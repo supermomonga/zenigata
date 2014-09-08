@@ -1,0 +1,18 @@
+# Zenigata
+
+Zenigata is the web merchant system for digital contents integrated with [WebPay](https://webpay.jp).
+
+*This project is WIP*
+
+
+## Features
+
+- Handle multiple contents
+- License management
+- Onetime bill / Monthly bill / Yearly bill
+- Affiliate system
+
+
+## License
+
+Not determined yet.
