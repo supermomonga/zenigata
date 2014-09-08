@@ -20,7 +20,6 @@ gem 'cancancan', '~> 1.9'
 gem 'webpay', '~> 3.1.2'
 
 
-gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
