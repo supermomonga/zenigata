@@ -22,5 +22,7 @@ module Zenigata
     config.generators do |g|
       g.test_framework = 'rspec'
     end
+
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
   end
 end
