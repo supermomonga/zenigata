@@ -20,4 +20,18 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  "Back": Back
+  "Update": Update
+  "Are you sure?": Are you sure?
+  "Sign up": Sign up
+  "Sign in": Sign in
+  "Log in": Log in
+  "Forgot your password?": Forgot your password?
+  "Didn't receive confirmation instructions?": Didn't receive confirmation instructions?
+  "Didn't receive unlock instructions?": Didn't receive unlock instructions?
+  "Sign in with Twitter": Sign in with Twitter
+  "Cancel my account": Cancel my account
+  "Currently waiting confirmation for:": "Currently waiting confirmation for:"
+  "leave it blank if you don't want to change it": leave it blank if you don't want to change it
+  "we need your current password to confirm your changes": we need your current password to confirm your changes
+

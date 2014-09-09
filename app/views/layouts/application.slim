@@ -9,8 +9,8 @@ html[ lang="ja" ]
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    .navbar.navbar-inverse.navbar-fixed-top[ role="navigation" ]
-      .container-fluid
+    .navbar.navbar-default.navbar-fixed-top[ role="navigation" ]
+      .container
         .navbar-header
           button.navbar-toggle.collapsed[ type="button" data-toggle="collapse" data-target=".navbar-collapse" ]
             span.sr-only Toggle navigation
@@ -20,10 +20,6 @@ html[ lang="ja" ]
           a.navbar-brand[ href="/" ] Zenigata
         .navbar-collapse.collapse
           ul.nav.navbar-nav.navbar-right
-            li
-              a[ href="#" ] Document
-            li
-              a[ href="#" ] Help
             - if current_user
               li.dropdown
                 a.dropdown-toggle[href="#" data-toggle="dropdown"]
@@ -40,20 +36,14 @@ html[ lang="ja" ]
                   li.dropdown-header Account
                   li= link_to t('show user'), user_registration_path(current_user)
                   li= link_to t('edit user'), edit_user_registration_path(current_user)
-                  li= link_to t('auth.sign_out'), destroy_user_session_path, method: :delete
+                  li= link_to t('Sign out'), destroy_user_session_path, method: :delete
             - else
-              li= link_to t('auth.sign_in'), new_user_session_path
-          form.navbar-form.navbar-right
-            input.form-control[ type="text" placeholder="Search..." ]
-    .container-fluid
-      .row
-        .col-sm-3.col-md-2
-          ul.nav.nav-pills.nav-stacked
-            li.active
-              a[href="#"] Current menu
-            - 10.times do
-              li
-                a[href="#"] menu
-        .col-sm-9.col-md-10
-          = yield
+              li= link_to t('Sign up'), new_user_registration_path
+              li= link_to t('Sign in'), new_user_session_path
+            li
+              a[ href="#" ] Document
+            li
+              a[ href="#" ] Help
+    .container
+      = yield
 
